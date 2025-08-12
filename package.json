@@ -1,15 +1,13 @@
 {
   "name": "music-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Mock music API using json-server on Vercel",
   "scripts": {
     "start": "json-server --watch db.json --port 3000"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["music", "api", "json-server", "vercel"],
+  "author": "Shikhar",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
   }
