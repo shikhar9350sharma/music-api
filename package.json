@@ -1,20 +1,20 @@
 {
   "name": "music-api",
   "version": "1.0.0",
-  "description": "Mock music API using json-server on Vercel",
+  "description": "Music API using Express on Vercel",
   "scripts": {
-    "start": "json-server --watch db.json --port 3000"
+    "start": "node api/index.js"
   },
   "keywords": [
     "music",
     "api",
-    "json-server",
+    "express",
     "vercel"
   ],
   "author": "Shikhar",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "json-server": "^1.0.0-beta.3"
+    "cors": "^2.8.5"
   }
 }

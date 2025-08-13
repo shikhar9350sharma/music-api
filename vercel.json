@@ -1,14 +1,8 @@
 {
-  "version": 2,
   "builds": [
-    { "src": "api/*.js", "use": "@vercel/node" }
+    { "src": "api/index.js", "use": "@vercel/node" }
   ],
-  "rewrites": [
-    { "source": "/songs", "destination": "/api/songs" },
-    { "source": "/newrelease", "destination": "/api/newrelease" },
-    { "source": "/punjabi", "destination": "/api/punjabi" },
-    { "source": "/english", "destination": "/api/english" },
-    { "source": "/artists", "destination": "/api/artists" },
-    { "source": "/albums", "destination": "/api/albums" }
+  "routes": [
+    { "src": "/(.*)", "dest": "api/index.js" }
   ]
 }
