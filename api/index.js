@@ -7,10 +7,10 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(cors());
 
 // Middleware to parse JSON (not strictly needed for read-only)
 app.use(express.json());
-app.use(cors());
 
 // 🔒 Block write operations
 app.use((req, res, next) => {
