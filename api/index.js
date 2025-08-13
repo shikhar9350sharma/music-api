@@ -54,34 +54,12 @@ const getItemById = (section, id, res) => {
 };
 
 // 🎯 Custom route for /songs with search support
-// app.get('/songs', (req, res) => {
-//   const query = req.query.q?.toLowerCase();
-//   const filePath = path.join(__dirname, '..', 'db.json');
 
-//   fs.readFile(filePath, 'utf8', (err, data) => {
-//     if (err) return res.status(500).json({ error: 'Failed to read songs' });
-
-//     try {
-//       const db = JSON.parse(data);
-//       let results = db.songs;
-
-//       if (query) {
-//         results = results.filter(song =>
-//           song.title?.toLowerCase().includes(query) ||
-//           song.artist?.toLowerCase().includes(query) ||
-//           song.album?.toLowerCase().includes(query)
-//         );
-//       }
-
-//       res.json(results);
-//     } catch (parseErr) {
-//       res.status(500).json({ error: 'Invalid JSON format' });
-//     }
-//   });
-// });
 app.get('/songs', (req, res) => {
   const query = req.query.q?.toLowerCase();
+
   const artistID = req.query.artistID;
+  const albumID = req.query.albumID;
   const filePath = path.join(__dirname, '..', 'db.json');
 
   fs.readFile(filePath, 'utf8', (err, data) => {
@@ -101,6 +79,10 @@ app.get('/songs', (req, res) => {
 
       if (artistID) {
         results = results.filter(song => song.artistID === parseInt(artistID));
+        
+      }
+      if (albumID) {
+        results = results.filter(song => song.albumID === parseInt(artistID));
       }
 
       res.json(results);
