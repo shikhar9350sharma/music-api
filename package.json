@@ -5,10 +5,16 @@
   "scripts": {
     "start": "json-server --watch db.json --port 3000"
   },
-  "keywords": ["music", "api", "json-server", "vercel"],
+  "keywords": [
+    "music",
+    "api",
+    "json-server",
+    "vercel"
+  ],
   "author": "Shikhar",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.21.2",
     "json-server": "^1.0.0-beta.3"
   }
 }
