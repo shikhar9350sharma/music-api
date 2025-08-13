@@ -57,7 +57,6 @@ const getItemById = (section, id, res) => {
 
 app.get('/songs', (req, res) => {
   const query = req.query.q?.toLowerCase();
-
   const artistID = req.query.artistID;
   const albumID = req.query.albumID;
   const filePath = path.join(__dirname, '..', 'db.json');
@@ -82,7 +81,7 @@ app.get('/songs', (req, res) => {
         
       }
       if (albumID) {
-        results = results.filter(song => song.albumID === parseInt(artistID));
+        results = results.filter(song => song.albumID === parseInt(albumID));
       }
 
       res.json(results);
