@@ -1067,19 +1067,6 @@
     },
     {
       "id": 83,
-      "title": "Ajab Si",
-      "artistID": 3,
-      "albumID": 4,
-      "artist": "KK",
-      "duration": "4:02",
-      "likes": 38290,
-      "monthlyListeners": 1239440,
-      "lyrics": "No Lyrics Found",
-      "cover": "https://ik.imagekit.io/shi23va533y/Tu-hi-hai.jpg?updatedAt=1753977039017",
-      "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689ac45d002bb69cfb9c/view?project=688ed67b002e01a9ed8f"
-    },
-    {
-      "id": 84,
       "title": "Thodi Der",
       "artistID": 8,
       "albumID": 4,
@@ -1092,7 +1079,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b27dd0023594999df/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 85,
+      "id": 84,
       "title": "Tu Hi Hai (Female Version)",
       "artistID": 0,
       "albumID": 4,
@@ -1105,7 +1092,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b27bc00125ccf49b1/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 86,
+      "id": 85,
       "title": "Stay A Little Longer",
       "artistID": 0,
       "albumID": 4,
@@ -1118,7 +1105,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b279e00181d1196fd/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 87,
+      "id": 86,
       "title": "Phir Bhi Tumko Chahungi",
       "artistID": 0,
       "albumID": 4,
@@ -1131,7 +1118,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b2787002305c6defe/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 88,
+      "id": 87,
       "title": "Phir Bhi Tumko Chahunga",
       "artistID": 1,
       "albumID": 4,
@@ -1144,7 +1131,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b2762002dbbb68b78/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 89,
+      "id": 88,
       "title": "Pal Bhar (Chaunhga Reprise)",
       "artistID": 1,
       "albumID": 4,
@@ -1157,7 +1144,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b274e0008551237b5/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 90,
+      "id": 89,
       "title": "Half Girlfriend Love Theme",
       "artistID": 0,
       "albumID": 4,
@@ -1170,7 +1157,7 @@
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b273b000dc394f0b4/view?project=688ed67b002e01a9ed8f"
     },
     {
-      "id": 91,
+      "id": 90,
       "title": "Baarish",
       "artistID": 0,
       "albumID": 4,
