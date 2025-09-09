@@ -1,24 +1,24 @@
 
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const cors = require('cors');
+import express from 'express';
+import fs from 'fs';
+import { fileURLToPath } from 'url';
+import path from 'path';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import connectDB from '../src/lib/db.js';
+import {signup, login, logout, updateProfile} from '../controllers/auth.controller.js';
+
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 app.use(cors());
-
-// Middleware to parse JSON (not strictly needed for read-only)
+dotenv.config();
 app.use(express.json());
 
-// 🔒 Block write operations
-app.use((req, res, next) => {
-  if (req.method !== 'GET') {
-    return res.status(403).json({ error: 'Write operations are disabled' });
-  }
-  next();
-});
+const PORT = process.env.PORT;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 // 📖 Helper to read db.json
 const readDB = (callback) => {
@@ -54,6 +54,16 @@ const getItemById = (section, id, res) => {
 };
 
 // 🎯 Custom route for /songs with search support
+app.get('/', (req, res) => {
+  res.send('Welcome to the API root!');
+});
+app.post('/signup',signup);
+
+app.post('/login', login);
+
+app.post('/logout', logout);
+
+app.put('/update-profile', updateProfile);
 
 app.get('/songs', (req, res) => {
   const query = req.query.q?.toLowerCase();
@@ -120,7 +130,9 @@ app.use((req, res) => {
   res.status(404).json({ error: 'Endpoint not found' });
 });
 
+
 // 🚦 Start server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log('Server is running on port: ', PORT);
+  connectDB();
 });

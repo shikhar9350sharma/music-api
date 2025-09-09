@@ -1,6 +1,7 @@
 {
   "name": "music-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "Music API using Express on Vercel",
   "scripts": {
     "start": "node api/index.js"
@@ -14,7 +15,11 @@
   "author": "Shikhar",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "express": "^4.21.2",
-    "cors": "^2.8.5"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1"
   }
 }
