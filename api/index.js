@@ -12,7 +12,6 @@ import path from 'path';
 
 
 dotenv.config();
-await connectDB();
 
 const app = express();
 app.use(cors());
@@ -129,8 +128,17 @@ app.use((req, res) => {
 });
 
 
-export default function handler(req, res) {
-  app(req, res);
+// export default function handler(req, res) {
+//   app(req, res);
+// }
+export default async function handler(req, res) {
+  try {
+    await connectDB(); // ✅ Ensure DB is connected before handling request
+    app(req, res);     // ✅ Pass request to Express
+  } catch (err) {
+    console.error('Handler error:', err);
+    res.status(500).json({ error: 'Internal server error' });
+  }
 }
 // // 🚦 Start server
 // app.listen(PORT, () => {
