@@ -12,7 +12,10 @@ export const signup = async (req, res) => {
         if (password.length < 6) {
             return res.status(400).json({ message: "Password must be 6 characters." });
         }
-        const user = await User.findOne({ email, username })
+        const user = await User.findOne({
+            $or: [{ email }, { username }]
+        });
+
         if (user) return res.status(400).json({ message: "Email or username already exists" });
 
         const salt = await bcrypt.genSalt(10)
@@ -26,9 +29,8 @@ export const signup = async (req, res) => {
 
         })
         if (newUser) {
-            //generate JWT
-            generateToken(newUser._id, res)
             await newUser.save()
+            generateToken(newUser._id, res) //generate JWT
             res.status(201).json({
                 _id: newUser._id,
                 fullName: newUser.fullName,
@@ -49,6 +51,9 @@ export const login = async (req, res) => {
     const { email, password, username } = req.body;
 
     try {
+        if ((!email && !username) || !password) {
+            return res.status(400).json({ message: "All fields are required" });
+        }
         // 🔍 Find user by either email or username
         const user = await User.findOne({
             $or: [{ email }, { username }]
