@@ -16,7 +16,7 @@ dotenv.config();
 const app = express();
 // app.use(cors());
 app.use(cors({
-  origin: ['https://jpmusic.appwrite.network', 'http://localhost:3000'], // or your frontend domain
+  origin: ['https://jpmusic.appwrite.network', 'http://localhost:5173'], // or your frontend domain
   credentials: true
 }));
 app.use(express.json());
