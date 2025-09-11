@@ -154,7 +154,7 @@ import path from 'path';
 
 
 dotenv.config();
-connectDB();
+await connectDB();
 
 const app = express();
 app.use(cors());

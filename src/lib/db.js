@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-const connetDB = async (req, res) => { 
+const connectDB = async (req, res) => { 
     try {
         const conn = await mongoose.connect(process.env.MONGODB_URI);
         console.log(`Mongodb connected: ${conn.connection.host}`)
