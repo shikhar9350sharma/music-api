@@ -7,4 +7,4 @@ const connectDB = async (req, res) => {
         console.log('Mongodb error: ', error)
     }
 }
-export default connetDB;
+export default connectDB;
