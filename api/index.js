@@ -163,7 +163,9 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
+app.get('/', (req, res) => {
+  res.send('Welcome to the API root!');
+});
 app.post('/signup', signup);
 app.post('/login', login);
 app.post('/logout', logout);
@@ -202,10 +204,6 @@ const getItemById = (section, id, res) => {
   });
 };
 
-// 🎯 Custom route for /songs with search support
-app.get('/', (req, res) => {
-  res.send('Welcome to the API root!');
-});
 
 app.get('/songs', (req, res) => {
   const query = req.query.q?.toLowerCase();
