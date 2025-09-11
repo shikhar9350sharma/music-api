@@ -14,7 +14,11 @@ import path from 'path';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173', // or your frontend domain
+  credentials: true
+}));
 app.use(express.json());
 
 const __filename = fileURLToPath(import.meta.url);
