@@ -8,10 +8,20 @@
     { "src": "/update-profile", "dest": "/api/index.js" },
     { "src": "/songs", "dest": "/api/index.js" },
     { "src": "/songs/(.*)", "dest": "/api/index.js" },
-    { "src": "/newrelease/(.*)", "dest": "/api/index.js" },
-    { "src": "/punjabi/(.*)", "dest": "/api/index.js" },
-    { "src": "/english/(.*)", "dest": "/api/index.js" },
+
+    { "src": "/artists", "dest": "/api/index.js" },
     { "src": "/artists/(.*)", "dest": "/api/index.js" },
+
+    { "src": "/punjabi", "dest": "/api/index.js" },
+    { "src": "/punjabi/(.*)", "dest": "/api/index.js" },
+
+    { "src": "/english", "dest": "/api/index.js" },
+    { "src": "/english/(.*)", "dest": "/api/index.js" },
+
+    { "src": "/newrelease", "dest": "/api/index.js" },
+    { "src": "/newrelease/(.*)", "dest": "/api/index.js" },
+
+    { "src": "/albums", "dest": "/api/index.js" },
     { "src": "/albums/(.*)", "dest": "/api/index.js" }
   ]
 }
