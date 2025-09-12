@@ -11,7 +11,6 @@ import { protectRoute } from '../src/middleware/auth.middleware.js';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
-import { protectRoute } from '../src/middleware/auth.middleware.js';
 
 
 dotenv.config();
