@@ -4,11 +4,14 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from '../src/lib/db.js';
-import { signup, login, logout, updateProfile } from '../controllers/auth.controller.js';
+import { signup, login, logout, updateProfile, CheckAuth } from '../controllers/auth.controller.js';
+import cookieParser from 'cookie-parser';
+import { protectRoute } from '../src/middleware/auth.middleware.js';
 
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import path from 'path';
+import { protectRoute } from '../src/middleware/auth.middleware.js';
 
 
 dotenv.config();
@@ -20,6 +23,8 @@ app.use(cors({
   credentials: true
 }));
 app.use(express.json());
+app.use(cookieParser());
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -30,7 +35,8 @@ app.get('/', (req, res) => {
 app.post('/signup', signup);
 app.post('/login', login);
 app.post('/logout', logout);
-app.put('/update-profile', updateProfile);
+app.put('/update-profile', protectRoute ,updateProfile);
+app.get('/check', protectRoute, CheckAuth)
 
 // 📖 Helper to read db.json
 const readDB = (callback) => {
