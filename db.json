@@ -1168,6 +1168,45 @@
       "lyrics": "No Lyrics Found",
       "cover": "https://ik.imagekit.io/shi23va533y/Tu-hi-hai.jpg?updatedAt=1753977039017",
       "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b2725000f66c05537/view?project=688ed67b002e01a9ed8f"
+    },
+    {
+      "id": 91,
+      "title": "Ishq karu",
+      "artistID": 0,
+      "albumID": 0,
+      "artist": "Vishal Chandrashekhar • Sita Ramam",
+      "duration": "3:23",
+      "likes": 384390,
+      "monthlyListeners": 1239440,
+      "lyrics": "No Lyrics Found",
+      "cover": "https://ik.imagekit.io/shi23va533y/sitaRamam.jpg?updatedAt=1773483012842",
+      "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b2725000f66c05537/view?project=688ed67b002e01a9ed8f"
+    },
+    {
+      "id": 92,
+      "title": "Khat",
+      "artistID": 0,
+      "albumID": 0,
+      "artist": "Navjot Ahuja • Khat • 2025",
+      "duration": "4:57",
+      "likes": 883290,
+      "monthlyListeners": 7739440,
+      "lyrics": "काग़ज़ के फूल लाऊँ तेरे लिए\nख़त लिखूँ तेरे लिए मैं ख़ुदा में मानूँ नहीं\nपर माँगूँ दुआ तेरे लिए\n\nतेरे लिए घर बनाऊँदीवार नीले रंग से सजाऊँ\nपसंद है तुम्हें, मालूम है\nतुमने बताया था एक दफ़े\nनीले फूल लाऊँ तेरे लिए\nख़त लिखूँ तेरे लिए\nमैं ख़ुदा में मानूँ नहीं\nपर माँगूँ दुआ तेरे लिए\n\nतेरी बातें नासमझ सी, फिर भी जायज़ लग रही हैं\nतू परेशाँ कर रही है,\n फिर भी मासूम लग रही है\n\nतेरे लिए मंदिर जाऊँतेरे नाम का दिया जलाऊँ\nहँसता रहे तू चाहे जो हो\nतेरी हँसी को नज़र ना लगे\nकाग़ज़ के फूल लाऊँ तेरे लिए\nख़त लिखूँ तेरे लिए\nमैं ख़ुदा में मानूँ नहीं\nपर माँगूँ दुआ तेरे लिए\n\nतेरे लिए हम बने हैंतेरे लिए बदल रहे हैं\nक्या मोहब्बत हो गई है?\nतेरी ही तेरी बातें करें\n\nतेरे लिए घर बनाऊँदीवार नीले रंग से सजाऊँ\nपसंद है तुम्हें, मालूम है\nतुमने बताया था एक दफ़े\n\nदेख, शायर बना तेरे लिएनग़्मा लिखा तेरे लिए\nमैं ख़ुदा में मानूँ क्यूँ\nतू ख़ुदा मेरे लिए\n",
+      "cover": "https://ik.imagekit.io/shi23va533y/Khat.jpg?updatedAt=1773484439531",
+      "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b2725000f66c05537/view?project=688ed67b002e01a9ed8f"
+    },
+    {
+      "id": 93,
+      "title": "Deewaana Deewaana",
+      "artistID": 0,
+      "albumID": 0,
+      "artist": "A.R. Rahman • Tere Ishk Mein • 2025",
+      "duration": "5:38",
+      "likes": 883290,
+      "monthlyListeners": 7739440,
+      "lyrics": " ",
+      "cover": "https://ik.imagekit.io/shi23va533y/TereIshqMein.jpg?updatedAt=1773485287055",
+      "audioURL": "https://fra.cloud.appwrite.io/v1/storage/buckets/688f618d0027c3deee74/files/689b2725000f66c05537/view?project=688ed67b002e01a9ed8f"
     }
   ],
   "newrelease": [
